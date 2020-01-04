@@ -67,7 +67,7 @@
 class="close" title="Close Modal">&times;</span>
 
   <!-- Modal Content -->
-  <form class="modal-content animate" action="check.jsp" method="post">
+  <form class="modal-content animate" action="/check.jsp" method="post">
     <div class="imgcontainer">
       <img src="../images/logo.png" alt="Avatar" class="avatar">
     </div>
@@ -79,7 +79,7 @@ class="close" title="Close Modal">&times;</span>
       <label for="psw" method="post"><b>密碼</b></label>
       <input type="password" class="LOGINHH" method="post" placeholder="輸入您的密碼" onkeyup="value=value.replace(/[\W]/g,'') " name="password_login" required>
 
-      <button type="submit" method="post">登入</button>
+      <a href="index_login.html"><button type="submit" method="post">登入</button></a>
       <label>
         <input type="checkbox" checked="checked" name="remember"> 記住我
       </label>

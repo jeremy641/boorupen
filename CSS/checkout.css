@@ -42,6 +42,14 @@ input[type=text] {
   border-radius: 3px;
 }
 
+input[type=email] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
 label {
   margin-bottom: 10px;
   display: block;
@@ -82,4 +90,38 @@ span.price {
   .col-25 {
     margin-bottom: 20px;
   }
+}
+
+#FGFG{
+	position:absolute;
+	top:200px;
+	left:550px;
+	font-weight:bolder;
+	font-size:50px;
+}
+#FGFP{
+	position:absolute;
+	top:300px;
+	left:420px;
+	font-weight:bolder;
+	font-size:30px;
+}
+
+.ch{
+	position:absolute;
+	top:400px;
+	left:150px;
+	width:40%;
+}
+
+.CJ{
+position:absolute;
+	top:395px;
+	left:800px;
+	width:40%;
+}
+
+#CCCCC{
+	position:relative;
+	top:1950px;
 }
