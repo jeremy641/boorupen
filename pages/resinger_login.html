@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+	<meta charset="UTF-8">
+	<title>註冊新帳號</title>
+  <link rel="icon" href="../images/logo.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../CSS/login.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/index.css">
+	<script src="../js/index.js"></script>
+
+	
+</head>
+<body>
+	<header>
+			<a href="index_login.html"><img src="../images/LOGO.png" alt="" width="330px" height="80px"></a>
+			</header><!-- /header -->
+			
+	<nav class="NP">
+				
+			
+			<div class="topnav" id="myTopnav">
+  <a href="index_login.html" class="active">回首頁</a>
+  <a href="2019_award_login.html">2019文具大賞</a>
+  <a href="hot_sales_login.html">熱銷商品</a>
+  <div class="dropdown">
+    <button class="dropbtn">文具分類
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="gunpen_login.html">鋼筆</a>
+      <a href="pencil_login.html">鉛筆</a>
+      <a href="pen_login.html">原子筆</a>
+      <a href="autopen_login.html">自動鉛筆</a>
+      <a href="note_login.html">筆記本</a>
+      <a href="others_login.html">其他</a>
+    </div>
+  </div>
+  <a href="about_login.html">關於我們</a>
+  <a href="search_login.html">搜尋商品</a>
+  <a href="member_login.jsp">會員專區</a>
+  <a href="index.html">登出</a>
+  <div class="LOGINPO">
+  	<a href="member_login.jsp">會員歡迎你!!</a>
+    <a></a>
+    <a href="resinger_login.html">註冊新帳號</a>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+
+
+            </nav>
+           
+
+ 
+
+
+
+	<div class="bg-img2">
+  <form action="checkaccount.jsp" class="container" method="post">
+    <h1>註冊</h1>
+
+    <label for="email"><b>您的新帳號</b></label>
+    <input type="text" method="post" placeholder="輸入您的帳號" onkeyup="value=value.replace(/[\W]/g,'') " name="new_account" required>
+
+    <label for="psw"><b>您的新密碼</b></label>
+    <input type="password" method="post" placeholder="輸入您的密碼" onkeyup="value=value.replace(/[\W]/g,'') " name="new_password" required>
+
+    <label for="repeat-psw"><b>再次確認您的新密碼</b></label>
+    <input type="password" method="post" placeholder="輸入您的密碼" onkeyup="value=value.replace(/[\W]/g,'') " name="new_password_check" required>
+
+
+
+    <button type="submit" class="btn">註冊新帳號</button>
+  </form>
+</div>
+
+
+<footer>
+    <p>
+  &nbsp;<br> 
+    &nbsp;<br>
+    Copyright © 2019 by ボールペン comp.
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    </p>
+  </footer>
+</body>
+</html>

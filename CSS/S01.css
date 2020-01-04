@@ -1,0 +1,581 @@
+body{
+	font-family:"微軟正黑體";
+}
+.PIC{
+	position:absolute;
+	top:300px;
+	left:330px;
+}
+.PIC:hover{
+	transform: scale(1.05);
+}
+
+
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 35%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+.T1{
+	position:absolute;
+	top:270px;
+	left:750px;
+	font-size:30px;
+	
+}
+.T2{
+	position:absolute;
+	top:340px;
+	left:750px;
+	font-size:20px;
+	color:#FF0000;
+}
+.T3{
+	position:absolute;
+	top:400px;
+	left:750px;
+	font-size:20px;
+	color:#FF8800;
+}
+.T4{
+	position:absolute;
+	top:460px;
+	left:750px;
+	font-size:20px;
+	color:#FF8800;
+}
+.T4_1{
+	position:absolute;
+	top:520px;
+	left:750px;
+	font-size:20px;
+	color:#FF8800;
+}
+.T5{
+	position:absolute;
+	top:600px;
+	left:800px;
+	font-size:18px;
+}
+#myform{
+	position:absolute;
+	top:600px;
+	left:930px;
+	font-size:18px;
+}
+
+.qty {
+  width: 40px;
+  height: 35px;
+  text-align: center;
+  border: 0;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+
+input.qtyplus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+}
+
+input.qtyminus {
+  width: 25px;
+  height: 35px;
+  border: 1px solid #aaa;
+  background: #f8f8f8;
+}
+#BUYY{
+	position:absolute;
+	top:70px;
+	left:200px;
+	font-size:18px;
+}
+.price1{
+	position:absolute;
+	top:585px;
+	left:1150px;
+	font-size:20px;
+}
+.price2{
+	position:absolute;
+	top:555px;
+	left:1200px;
+	font-size:35px;
+	color:red;
+}
+.price3{
+	position:absolute;
+	top:590px;
+	left:1340px;
+	font-size:20px;
+}
+.T6{
+	position:absolute;
+	top:780px;
+	left:100px;
+	font-size:25px;
+}
+#HR1{
+	position:relative;
+	top:510px;
+	left:0px;
+	}
+
+.T7{
+	position:absolute;
+	top:900px;
+	left:350px;
+	font-size:25px;
+}
+.T8{
+	position:absolute;
+	top:1400px;
+	left:200px;
+	font-size:16px;
+}
+.T9{
+	position:absolute;
+	top:1600px;
+	left:350px;
+	font-size:25px;
+}
+.T10{
+	position:absolute;
+	top:2800px;
+	left:100px;
+	font-size:25px;
+}
+#HR2{
+	position:relative;
+	top:2500px;
+	left:0px;
+}
+
+
+/****** Style Star Rating Widget *****/
+
+.rating { 
+  border: none;
+  float: left;
+  position:absolute;
+  left:100px;
+  top:2870px;
+}
+
+.rating > input { display: none; } 
+.rating > label:before { 
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+
+}
+
+.rating > .half:before { 
+  content: "\f089";
+  position: absolute;
+}
+
+.rating > label { 
+  color: #555; 
+ float: right; 
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating > input:checked ~ label, /* show gold star when clicked */
+.rating:not(:checked) > label:hover, /* hover current star */
+.rating:not(:checked) > label:hover ~ label { color: #77FF00;  } /* hover previous stars in list */
+
+.rating > input:checked + label:hover, /* hover current star when changing rating */
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label, /* lighten current selection */
+.rating > input:checked ~ label:hover ~ label { color: #CCFF99;  } 
+
+.startable{
+	position: absolute;
+	top: 2950px;
+	left: 40px;
+	width:80%;
+}
+
+
+.heading {
+  font-size: 25px;
+  margin-right: 25px;
+  padding-left: 550px;
+}
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top: 10px;
+}
+
+.middle {
+  float: left;
+  width: 70%;
+  margin-top: 10px;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.T001  .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.T001  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.T001  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.T001  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.T001  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+.T002  .bar-5 {width: 80%; height: 18px; background-color: #4CAF50;}
+.T002  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.T002  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T002  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+.T002  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T003  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T003  .bar-4 {width: 25%; height: 18px; background-color: #2196F3;}
+.T003  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.T003  .bar-2 {width: 10%; height: 18px; background-color: #ff9800;}
+.T003  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T004  .bar-5 {width: 95%; height: 18px; background-color: #4CAF50;}
+.T004  .bar-4 {width: 75%; height: 18px; background-color: #2196F3;}
+.T004  .bar-3 {width: 25%; height: 18px; background-color: #00bcd4;}
+.T004  .bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.T004  .bar-1 {width: 25%; height: 18px; background-color: #f44336;}
+
+.T005  .bar-5 {width: 75%; height: 18px; background-color: #4CAF50;}
+.T005  .bar-4 {width: 85%; height: 18px; background-color: #2196F3;}
+.T005  .bar-3 {width: 25%; height: 18px; background-color: #00bcd4;}
+.T005  .bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.T005  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T006  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T006  .bar-4 {width: 65%; height: 18px; background-color: #2196F3;}
+.T006  .bar-3 {width: 34%; height: 18px; background-color: #00bcd4;}
+.T006  .bar-2 {width: 20%; height: 18px; background-color: #ff9800;}
+.T006  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T007  .bar-5 {width: 75%; height: 18px; background-color: #4CAF50;}
+.T007  .bar-4 {width: 40%; height: 18px; background-color: #2196F3;}
+.T007  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T007  .bar-2 {width: 10%; height: 18px; background-color: #ff9800;}
+.T007  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T008  .bar-5 {width: 80%; height: 18px; background-color: #4CAF50;}
+.T008  .bar-4 {width: 75%; height: 18px; background-color: #2196F3;}
+.T008  .bar-3 {width: 30%; height: 18px; background-color: #00bcd4;}
+.T008  .bar-2 {width: 20%; height: 18px; background-color: #ff9800;}
+.T008  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T009  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T009  .bar-4 {width: 40%; height: 18px; background-color: #2196F3;}
+.T009  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T009  .bar-2 {width: 10%; height: 18px; background-color: #ff9800;}
+.T009  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T010  .bar-5 {width: 85%; height: 18px; background-color: #4CAF50;}
+.T010  .bar-4 {width: 72%; height: 18px; background-color: #2196F3;}
+.T010  .bar-3 {width: 36%; height: 18px; background-color: #00bcd4;}
+.T010  .bar-2 {width: 20%; height: 18px; background-color: #ff9800;}
+.T010  .bar-1 {width: 4%; height: 18px; background-color: #f44336;}
+
+.T011  .bar-5 {width: 95%; height: 18px; background-color: #4CAF50;}
+.T011  .bar-4 {width: 75%; height: 18px; background-color: #2196F3;}
+.T011  .bar-3 {width: 40%; height: 18px; background-color: #00bcd4;}
+.T011  .bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.T011  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T012  .bar-5 {width: 75%; height: 18px; background-color: #4CAF50;}
+.T012  .bar-4 {width: 85%; height: 18px; background-color: #2196F3;}
+.T012  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T012  .bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.T012  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T013  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T013  .bar-4 {width: 70%; height: 18px; background-color: #2196F3;}
+.T013  .bar-3 {width: 15%; height: 18px; background-color: #00bcd4;}
+.T013  .bar-2 {width: 20%; height: 18px; background-color: #ff9800;}
+.T013  .bar-1 {width: 3%; height: 18px; background-color: #f44336;}
+
+.T014  .bar-5 {width: 84%; height: 18px; background-color: #4CAF50;}
+.T014  .bar-4 {width: 80%; height: 18px; background-color: #2196F3;}
+.T014  .bar-3 {width: 15%; height: 18px; background-color: #00bcd4;}
+.T014  .bar-2 {width: 21%; height: 18px; background-color: #ff9800;}
+.T014  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T015  .bar-5 {width: 93%; height: 18px; background-color: #4CAF50;}
+.T015  .bar-4 {width: 72%; height: 18px; background-color: #2196F3;}
+.T015  .bar-3 {width: 30%; height: 18px; background-color: #00bcd4;}
+.T015  .bar-2 {width: 14%; height: 18px; background-color: #ff9800;}
+.T015  .bar-1 {width: 21%; height: 18px; background-color: #f44336;}
+
+.T016  .bar-5 {width: 85%; height: 18px; background-color: #4CAF50;}
+.T016  .bar-4 {width: 60%; height: 18px; background-color: #2196F3;}
+.T016  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.T016  .bar-2 {width: 3%; height: 18px; background-color: #ff9800;}
+.T016  .bar-1 {width: 2%; height: 18px; background-color: #f44336;}
+
+.T017  .bar-5 {width: 80%; height: 18px; background-color: #4CAF50;}
+.T017  .bar-4 {width: 50%; height: 18px; background-color: #2196F3;}
+.T017  .bar-3 {width: 40%; height: 18px; background-color: #00bcd4;}
+.T017  .bar-2 {width: 32%; height: 18px; background-color: #ff9800;}
+.T017  .bar-1 {width: 11%; height: 18px; background-color: #f44336;}
+
+.T018  .bar-5 {width: 95%; height: 18px; background-color: #4CAF50;}
+.T018  .bar-4 {width: 80%; height: 18px; background-color: #2196F3;}
+.T018  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T018  .bar-2 {width: 15%; height: 18px; background-color: #ff9800;}
+.T018  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T019  .bar-5 {width: 75%; height: 18px; background-color: #4CAF50;}
+.T019  .bar-4 {width: 85%; height: 18px; background-color: #2196F3;}
+.T019  .bar-3 {width: 15%; height: 18px; background-color: #00bcd4;}
+.T019  .bar-2 {width: 3%; height: 18px; background-color: #ff9800;}
+.T019  .bar-1 {width: 0%; height: 18px; background-color: #f44336;}
+
+.T020  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T020  .bar-4 {width: 43%; height: 18px; background-color: #2196F3;}
+.T020  .bar-3 {width: 25%; height: 18px; background-color: #00bcd4;}
+.T020  .bar-2 {width: 20%; height: 18px; background-color: #ff9800;}
+.T020  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T021  .bar-5 {width: 70%; height: 18px; background-color: #4CAF50;}
+.T021  .bar-4 {width: 40%; height: 18px; background-color: #2196F3;}
+.T021  .bar-3 {width: 50%; height: 18px; background-color: #00bcd4;}
+.T021  .bar-2 {width: 20%; height: 18px; background-color: #ff9800;}
+.T021  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+
+.T022  .bar-5 {width: 95%; height: 18px; background-color: #4CAF50;}
+.T022  .bar-4 {width: 80%; height: 18px; background-color: #2196F3;}
+.T022  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T022  .bar-2 {width: 5%; height: 18px; background-color: #ff9800;}
+.T022  .bar-1 {width: 0%; height: 18px; background-color: #f44336;}
+
+.T023  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T023  .bar-4 {width: 65%; height: 18px; background-color: #2196F3;}
+.T023  .bar-3 {width: 32%; height: 18px; background-color: #00bcd4;}
+.T023  .bar-2 {width: 25%; height: 18px; background-color: #ff9800;}
+.T023  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T024  .bar-5 {width: 75%; height: 18px; background-color: #4CAF50;}
+.T024  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.T024  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T024  .bar-2 {width: 15%; height: 18px; background-color: #ff9800;}
+.T024  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T025  .bar-5 {width: 95%; height: 18px; background-color: #4CAF50;}
+.T025  .bar-4 {width: 87%; height: 18px; background-color: #2196F3;}
+.T025  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.T025  .bar-2 {width: 5%; height: 18px; background-color: #ff9800;}
+.T025  .bar-1 {width: 3%; height: 18px; background-color: #f44336;}
+
+.T026  .bar-5 {width: 85%; height: 18px; background-color: #4CAF50;}
+.T026  .bar-4 {width: 74%; height: 18px; background-color: #2196F3;}
+.T026  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T026  .bar-2 {width: 10%; height: 18px; background-color: #ff9800;}
+.T026  .bar-1 {width: 6%; height: 18px; background-color: #f44336;}
+
+.T027  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T027  .bar-4 {width: 60%; height: 18px; background-color: #2196F3;}
+.T027  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.T027  .bar-2 {width: 5%; height: 18px; background-color: #ff9800;}
+.T027  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T028  .bar-5 {width: 70%; height: 18px; background-color: #4CAF50;}
+.T028  .bar-4 {width: 80%; height: 18px; background-color: #2196F3;}
+.T028  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T028  .bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.T028  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T029  .bar-5 {width: 80%; height: 18px; background-color: #4CAF50;}
+.T029  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+.T029  .bar-3 {width: 40%; height: 18px; background-color: #00bcd4;}
+.T029  .bar-2 {width: 10%; height: 18px; background-color: #ff9800;}
+.T029  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T030  .bar-5 {width: 95%; height: 18px; background-color: #4CAF50;}
+.T030  .bar-4 {width: 74%; height: 18px; background-color: #2196F3;}
+.T030  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T030  .bar-2 {width: 15%; height: 18px; background-color: #ff9800;}
+.T030  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T031  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T031  .bar-4 {width: 80%; height: 18px; background-color: #2196F3;}
+.T031  .bar-3 {width: 15%; height: 18px; background-color: #00bcd4;}
+.T031  .bar-2 {width: 20%; height: 18px; background-color: #ff9800;}
+.T031  .bar-1 {width: 12%; height: 18px; background-color: #f44336;}
+
+.T032  .bar-5 {width: 70%; height: 18px; background-color: #4CAF50;}
+.T032  .bar-4 {width: 80%; height: 18px; background-color: #2196F3;}
+.T032  .bar-3 {width: 30%; height: 18px; background-color: #00bcd4;}
+.T032  .bar-2 {width: 18%; height: 18px; background-color: #ff9800;}
+.T032  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T033  .bar-5 {width: 60%; height: 18px; background-color: #4CAF50;}
+.T033  .bar-4 {width: 90%; height: 18px; background-color: #2196F3;}
+.T033  .bar-3 {width: 40%; height: 18px; background-color: #00bcd4;}
+.T033  .bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.T033  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T034  .bar-5 {width: 98%; height: 18px; background-color: #4CAF50;}
+.T034  .bar-4 {width: 70%; height: 18px; background-color: #2196F3;}
+.T034  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.T034  .bar-2 {width: 15%; height: 18px; background-color: #ff9800;}
+.T034  .bar-1 {width: 3%; height: 18px; background-color: #f44336;}
+
+.T035  .bar-5 {width: 97%; height: 18px; background-color: #4CAF50;}
+.T035  .bar-4 {width: 85%; height: 18px; background-color: #2196F3;}
+.T035  .bar-3 {width: 25%; height: 18px; background-color: #00bcd4;}
+.T035  .bar-2 {width: 11%; height: 18px; background-color: #ff9800;}
+.T035  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T036  .bar-5 {width: 85%; height: 18px; background-color: #4CAF50;}
+.T036  .bar-4 {width: 71%; height: 18px; background-color: #2196F3;}
+.T036  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+.T036  .bar-2 {width: 25%; height: 18px; background-color: #ff9800;}
+.T036  .bar-1 {width: 14%; height: 18px; background-color: #f44336;}
+
+.T037  .bar-5 {width: 80%; height: 18px; background-color: #4CAF50;}
+.T037  .bar-4 {width: 60%; height: 18px; background-color: #2196F3;}
+.T037  .bar-3 {width: 40%; height: 18px; background-color: #00bcd4;}
+.T037  .bar-2 {width: 10%; height: 18px; background-color: #ff9800;}
+.T037  .bar-1 {width: 20%; height: 18px; background-color: #f44336;}
+
+.T038  .bar-5 {width: 70%; height: 18px; background-color: #4CAF50;}
+.T038  .bar-4 {width: 40%; height: 18px; background-color: #2196F3;}
+.T038  .bar-3 {width: 50%; height: 18px; background-color: #00bcd4;}
+.T038  .bar-2 {width: 30%; height: 18px; background-color: #ff9800;}
+.T038  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+.T039  .bar-5 {width: 80%; height: 18px; background-color: #4CAF50;}
+.T039  .bar-4 {width: 70%; height: 18px; background-color: #2196F3;}
+.T039  .bar-3 {width: 40%; height: 18px; background-color: #00bcd4;}
+.T039  .bar-2 {width: 16%; height: 18px; background-color: #ff9800;}
+.T039  .bar-1 {width: 5%; height: 18px; background-color: #f44336;}
+
+.T040  .bar-5 {width: 90%; height: 18px; background-color: #4CAF50;}
+.T040  .bar-4 {width: 60%; height: 18px; background-color: #2196F3;}
+.T040  .bar-3 {width: 20%; height: 18px; background-color: #00bcd4;}
+.T040  .bar-2 {width: 11%; height: 18px; background-color: #ff9800;}
+.T040  .bar-1 {width: 10%; height: 18px; background-color: #f44336;}
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  /* Hide the right column on small screens */
+  .right {
+    display: none;
+  }
+}

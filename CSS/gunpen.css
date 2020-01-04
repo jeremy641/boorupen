@@ -1,0 +1,93 @@
+a {
+    color:black;
+}
+.S01{
+  position: absolute;
+  top: 350px;
+  left: 220px;
+  float:left;
+  text-align:center;
+}
+#S01{
+	border: 5px #FF88C2 solid;
+}
+.S02{
+  position: absolute;
+  top: 350px;
+  left: 900px;
+  float:right;
+  text-align:center;
+}
+#S02{
+	border: 5px #FF88C2 solid;
+}
+.S03{
+  position: absolute;
+  top: 1000px;
+  left: 220px;
+  float:left;
+  text-align:center;
+}
+#S03{
+	border: 5px #FF88C2 solid;
+}
+.S04{
+  position: absolute;
+  top: 1000px;
+  left: 900px;
+  float:right;
+  text-align:center;
+}
+#S04{
+	border: 5px #FF88C2 solid;
+}
+.S05{
+  position: absolute;
+  top: 1650px;
+  left: 260px;
+  float:left;
+  text-align:center;
+}
+#S05{
+	border: 5px #FF88C2 solid;
+}
+.S06{
+  position: absolute;
+  top: 1650px;
+  left: 880px;
+  float:right;
+  text-align:center;
+}
+#S06{
+	border: 5px #FF88C2 solid;
+}
+.S07{
+  position: absolute;
+  top: 2300px;
+  left: 260px;
+  float:left;
+  text-align:center;
+}
+#S07{
+	border: 5px #FF88C2 solid;
+}
+.S08{
+  position: absolute;
+  top: 2300px;
+  left: 880px;
+  float:right;
+  text-align:center;
+}
+#S08{
+	border: 5px #FF88C2 solid;
+}
+.SALES{
+	color:black;
+}
+.SALES img:hover{
+	 background-color: #444;
+	 opacity:0.5;
+}
+.SALES a:hover{
+	color: #666;
+}
