@@ -91,3 +91,24 @@ a {
 .SALES a:hover{
 	color: #666;
 }
+
+.intro{
+	position:absolute;
+	top:1530px;
+	left:160px;
+}
+.intro1{
+	position:absolute;
+	top:1530px;
+	left:760px;
+}
+.intro2{
+	position:absolute;
+	top:2200px;
+	left:160px;
+}
+.intro3{
+	position:absolute;
+	top:2200px;
+	left:760px;
+}
